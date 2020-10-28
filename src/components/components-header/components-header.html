@@ -1,0 +1,14 @@
+<div class="container" [ngStyle]="{'background-image': 'url(' + urlImage + ')'}">
+  <div class="icon-group">
+    <img class="logo" src="../../assets/imgs/logo.png" alt="Logo Empresa">
+    <ion-icon class="icon" name="menu"></ion-icon>
+  </div>
+  <ion-icon
+    class="icon-back"
+    *ngIf="botaoVoltar == 'mostrar'"
+    name="arrow-back"
+    (click)="voltar()"
+  ></ion-icon>
+  <h1>{{ titulo }}</h1>
+  <p>{{ subtitulo }}</p>
+</div>  

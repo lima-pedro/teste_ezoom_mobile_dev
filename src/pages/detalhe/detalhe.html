@@ -1,0 +1,20 @@
+<ion-header>
+  <header-curso
+    titulo="{{ curso.titulo }}"
+    subTitulo="Selecione o curso ou treinamento que deseja."
+    botaoVoltar="mostrar"
+    urlImage="../../assets/imgs/header01.jpg">
+  </header-curso>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-content class="card-content">
+      <p>
+        {{ curso.descricao }}
+      </p>
+      <div class="box-img">
+        <img *ngFor="let img of curso.img_galeria_link" src="{{ baseUrlImgGaleria + img }}">
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

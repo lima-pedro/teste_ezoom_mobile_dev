@@ -1,0 +1,7 @@
+{
+  "name": "testeezoom",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
